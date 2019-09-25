@@ -272,7 +272,7 @@ a {
   background-image: url("../img/promo-slide-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .promo-slider__slide:nth-child(2) {
