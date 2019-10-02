@@ -125,6 +125,7 @@ a {
 
 .main-contacts__phone::before {
   background-image: url("../img/phone-icon.svg");
+
 }
 
 .main-contacts__mail::before {
@@ -788,19 +789,23 @@ opacity: 1;
 
 .our-staff__left-arrow {
   position: absolute;
-  width: 30px;
-  top: 215px;
+  width: 45px;
+  height: 35px;
+  top: 266px;
   left: 0px;
   cursor: pointer;
+  background-image: url("../img/left_arrow.svg");
 }
 
 .our-staff__right-arrow {
   position: absolute;
   content: '';
-  width: 30px;
+  width: 45px;
+  height: 35px;
   top: 215px;
   right: 0px;
   cursor: pointer;
+  background-image: url("../img/right_arrow.svg");
 }
 
 .staff-slider {
