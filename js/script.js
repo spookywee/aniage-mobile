@@ -7,6 +7,26 @@ let staffCurrent = 0;
 let promoDots = document.querySelectorAll('.promo-slider__dot');
 let priceDots = document.querySelectorAll('.price-list__button');
 
+let menuLogo = document.querySelector(".phone__menu_button");
+let menuClose = document.querySelector(".phone__menu_button_close");
+let navMenu = document.querySelector(".nav-menu");
+
+function menuOpen(){
+  menuLogo.addEventListener("click", function(){
+    navMenu.style.display = "list-item";
+    menuLogo.style.display = "none";
+    menuClose.style.display = "block";
+  });
+
+  menuClose.addEventListener("click", function(){
+    navMenu.style.display = "none";
+    menuLogo.style.display = "block";
+    menuClose.style.display = "none";
+  });
+}
+
+menuOpen();
+
 function slider(slides, counter) {
   for (let i = 0; i<slides.length; i++) {
     slides[i].classList.add('shide');
@@ -25,6 +45,12 @@ function priceSlider(slides, counter) {
   priceDots[counter].classList.add('price-list__button--active');
 }
 
+function staffSlider(slides, counter) {
+  for (let i = 0; i<slides.length; i++) {
+    slides[i].classList.add('shide');
+  }
+  slides[counter].classList.remove('shide');
+}
 
 
 // кликабельные точки
@@ -33,7 +59,7 @@ function dotsClick(){
     promoDots[i].addEventListener('click', function(){
       slider(promoSlides, i);
     });
-  } 
+  }
 }
 
 // пролистывание списка услуг
@@ -89,7 +115,7 @@ buttonMore.addEventListener('click', function(){
   buttonMore.classList.add('shide');
   textImage.classList.add('about-us__add-image');
 })
-                                                                                     
+
 let priceListButtonLeft = document.querySelector('.price-list__button-left');
 let priceListButtonRight = document.querySelector('.price-list__button-right');
 let priceListSlides = document.querySelectorAll('.price-list__slide');
@@ -103,7 +129,7 @@ priceListButtonLeft.addEventListener('click', function(evt){
     priceListCurrent--;
   }
   priceSlider(priceListSlides, priceListCurrent);
-  
+
 })
 
 priceListButtonRight.addEventListener('click', function(evt){
@@ -130,7 +156,7 @@ staffButtonLeft.addEventListener('click', function(evt){
   else {
     staffCurrent--;
   }
-  slider(staffSlides, staffCurrent);
+  staffSlider(staffSlides, staffCurrent);
 })
 
 staffButtonRight.addEventListener('click', function(evt){
@@ -141,5 +167,5 @@ staffButtonRight.addEventListener('click', function(evt){
   else {
     staffCurrent++;
   }
-  slider(staffSlides, staffCurrent);
+  staffSlider(staffSlides, staffCurrent);
 })

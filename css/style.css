@@ -11,6 +11,7 @@ body {
   min-width: 1440px;
 }
 
+
 *,
 ::before,
 ::after {
@@ -129,6 +130,18 @@ a {
 .main-contacts__mail::before {
   background-image: url("../img/mail-icon.svg");
 }
+
+.phone__menu_button{
+  display: none;
+  position: relative;
+width: 21px;
+height: 17px;
+background-image: url("../img/menu_button.svg");
+
+}
+
+
+
 
 .main-contacts__list {
   display: -webkit-box;
@@ -352,6 +365,9 @@ opacity: 1;
   right: -100px;
 }
 
+
+/* ----------------------------------------------------- */
+
 .about-us {
   margin-bottom: 230px;
 }
@@ -400,7 +416,6 @@ opacity: 1;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-bottom: 12px;
 }
 
 .about-us__logo-title {
@@ -433,13 +448,15 @@ opacity: 1;
   color: #0066A8;
 }
 
+/* ----------- */
+
 .service {
   margin-bottom: 180px;
 }
 
 .service__title {
-  font-size: 28px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 120%;
   color: #003D64;
 }
 
@@ -642,8 +659,8 @@ opacity: 1;
   font-size: 28px;
   line-height: 28px;
   color: #ffffff;
-  top: 50px;
-  left: 255px;
+  bottom: 440px;
+  /* left: 255px; */
 }
 
 .promo-card__bg {
@@ -665,14 +682,18 @@ opacity: 1;
   padding: 60px 100px;
   background-color: #fff;
   border-radius: 10px;
-  margin-top: -370px;
+  margin-top: -440px;
   margin-bottom: 20px;
   -webkit-box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
 }
 
-.promo-card__left-content {
+.promo-card__content {
   width: 555px;
+}
+
+.img_promo{
+  position:absolute;
 }
 
 .promo-card__title {
@@ -684,7 +705,9 @@ opacity: 1;
 .promo-card__text {
   font-size: 17px;
   line-height: 30px;
+  color:#0066A8;
 }
+
 
 .promo-card__right-content {
   width: 450px;
@@ -778,6 +801,10 @@ opacity: 1;
   top: 215px;
   right: 0px;
   cursor: pointer;
+}
+
+.staff-slider {
+  height: 600px;
 }
 
 .staff-slider__slide-wrapper {
@@ -1206,4 +1233,43 @@ opacity: 1;
 .modal-promo__button {
   padding: 20px 72px;
   margin: 0;
+}
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .main-contacts{
+    display: none;
+  }
+  .nav-menu{
+    display: none;
+  }
+  .button-callback{
+    display: none;
+  }
+
+  .phone__menu_button{
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+}
+
+@media only screen and (max-width: 480px){
+  .page-header{
+    height: 60px;
+  }
+
+  .page-header__logo img{
+    width: 94px;
+    height: 51px;
+  }
+
+  .container{
+    display: none;
+  }
 }

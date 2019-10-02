@@ -8,64 +8,41 @@
   <title>Клиника антивозрастной медицины</title>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap&subset=cyrillic"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
   <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
   <header class="page-header">
-    <div class="page-header__top main-contacts">
-      <div class="container">
-        <h1 class="main-contacts__title titles">Клиника антивозрастной медицины</h1>
-        <div class="main-contacts__wrapper">
-          <ul class="main-contacts__list ulres">
-            <li>
-              <a class="main-contacts__link main-contacts__phone" href="tel:+74952681212">8 (495) 268-12-12</a>
-            </li>
-            <li>
-              <a class="main-contacts__link main-contacts__mail"
-                href="mailto:info@clinicamalyshevoy.ru">info@clinicamalyshevoy.ru</a>
-            </li>
-          </ul>
-          <ul class="main-contacts__social-list social ulres">
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/clinicamalyshevoy.antiage" aria-label="Мы в
-            Инстаграме"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/clinicamalyshevoy" aria-label="Мы в Фейсбуке"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/clinicamalyshevoy" aria-label="Мы в вконтакте"></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    
     <div class="page-header__bottom">
       <div class="container">
         <a class="page-header__logo">
-          <img src="img/main-logo.svg" alt="Логотип единого центра Елены Малышевой" width="149" height="81">
-        </a>
-        <nav class="page-header__nav nav-menu">
-          <ul class="nav-menu__list ulres">
-            <li class="nav-menu__item">
-              <a href="#">О клинике</a>
-            </li>
-            <li class="nav-menu__item">
-              <a href="#">Услуги и цены</a>
-            </li>
-            <li class="nav-menu__item">
-              <a href="#">Наши врачи</a>
-            </li>
-            <li class="nav-menu__item">
-              <a href="#">Акции</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="page-header__button button-callback buttonres">обратный звонок</button>
+          <img src="img/main-logo.svg" alt="Логотип единого центра Елены Малышевой" width="94" height="51">
+        </a>        
+        <a href = "#" class = "phone__menu_button"></a>
+        <a href = "#" class = "phone__menu_button_close"></a>
       </div>
     </div>
+    <nav class="page-header__nav nav-menu">
+      <ul class="nav-menu__list ulres">
+        <li class="nav-menu__item">
+          <a href="#">О клинике</a>
+        </li>
+        <li class="nav-menu__item">
+          <a href="#">Услуги и цены</a>
+        </li>
+        <li class="nav-menu__item">
+          <a href="#">Наши врачи</a>
+        </li>
+        <li class="nav-menu__item">
+          <a href="#">Акции</a>
+        </li>
+        <li>
+          <button class="page-header__button button-callback buttonres">обратный звонок</button>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main>
     <section class="promo">
@@ -75,19 +52,20 @@
             <h2 class="promo-slider__title titles">До конца сентября</h2>
             <p class="promo-slider__text">Косметология <br> со скидкой <span
                 class="promo-slider__text-percent">20%!</span></p>
-          </div>
+            <div class="buttons-container">
+                <div class="promo-slider__buttons">
+                  <a class="button button-promo" href="#">посмотреть акции</a><br>
+                  <a class="button button-appointment" href="#">записаться на прием</a>
+                </div>
+            </div>
         </div>
-        <div class="promo-slider__slide shide">
+        <!-- <div class="promo-slider__slide shide">
           <div class="container">
             <h2 class="promo-slider__title titles">Лечение гипергидроза</h2>
             <p class="promo-slider__text">со скидкой 20%!</p>
           </div>
-        </div>
-        <div class="container buttons-container">
-          <div class="promo-slider__buttons">
-            <a class="button button-promo" href="#">посмотреть акции</a>
-            <a class="button button-appointment" href="#">записаться на прием</a>
-          </div>
+        </div> -->
+        
           <button class="promo-slider__togle promo-slider__togle-left buttonres"></button>
           <button class="promo-slider__togle promo-slider__togle-right buttonres"></button>
           <div class="promo-slider__dots">
@@ -106,7 +84,7 @@
           <div class="about-us__content-wrapper">
             <div class="about-us__logo-block">
               <a href="#">
-                <img src="img/about-us-logo.svg" alt="Логотип в блоке о клинике" width="72" height="62">
+                <img src="img/about-us-logo.svg" alt="Логотип в блоке о клинике" width="52" height="44">
               </a>
               <h2 class="about-us__logo-title titles">
                 Клиника антивозрастной медицины
@@ -120,8 +98,10 @@
                 Для
                 этого наши доктора собрали по всему миру и внедрили самые современные технологии борьбы со старением.
                 Поэтому к нам приезжают на лечение пациенты со всей России, потому что нам доверяют и нас рекомендуют.
-                <br><br><br>
-
+               
+                </p> 
+                
+                <p class="about-us__additional-text shide">
                 Руководит направлением антивозрастной медицины врач-косметолог-дерматолог, гериатр, доктор медицинских
                 наук, заслуженный врач РТ, лауреат Российского конкурса Золотой Ланцет, в номинации косметолог года -
                 Светлана Леоновна Жабоева. Она не только виртуозно владеет всеми современными методиками эстетической
@@ -131,8 +111,8 @@
                 медицинских журналах. Миллионы российских женщин узнают правду о косметологии из передач «Жить здорово»
                 и
                 «Здоровье», где С.Л,Жабоева выступает экспертом.
-              </p>
-              <p class="about-us__additional-text shide">
+              
+             
                 Врач-косметолог Светлана Базаева является не только практикующим врачом с большим стажем работы, но и
                 тренером компании «Ipsen», обучает врачей профессиональным навыкам. Область ее специализации –
                 ботулинотерапия, коррекция возрастных изменений. Ежедневно она выполняет контурную пластику, проводит
@@ -458,12 +438,14 @@
       </div>
     </section>
     <section class="promo-card">
-      <h2 class="promo-card__section-title">Акции клиники</h2>
+     
       <div class="promo-card__bg"></div>
-      <div class="container">
+      <div class="container"> 
+        <h2 class="promo-card__section-title">Акции клиники</h2>
         <div class="promo-card__wrapper">
-          <div class="promo-card__left-content">
+          <div class="promo-card__content"><img class = "img_promo" src="img/promo-card-image.png" alt="Скидка 20%" width="221" height="132">
             <h3 class="promo-card__title titles">До конца сентября – косметология со скидкой 20%!</h3>
+             
             <p class="promo-card__text">
               <b class="promo-card__text-quote">«Красота – первый подарок, который Природа вручает женщине, и первый,
                 который она забирает обратно».</b> <br>
@@ -481,8 +463,7 @@
                 **Перечень услуг, участвующих в акции, уточняйте в контактном центре.</span>
             </p>
           </div>
-          <div class="promo-card__right-content">
-            <img src="img/promo-card-image.png" alt="Скидка 20%" width="450" height="269">
+          <div class="promo-card__content">
             <p class="promo-card__info">
               Акция действительна при оплате двух и более аналоговых услуг, проведенных в один визит, или при оплате
               последующего визита. <br><br>
@@ -512,17 +493,21 @@
             <div class="staff-slider__slide">
               <div class="staff-slider__slide-wrapper">
                 <div class="staff-slider__info">
-                  <img src="img/staff-image-1.jpg" alt="Фото работника" width="360" height="326">
-                  <h3 class="staff-slider__staff-name titles">Жабоева Светлана Леоновна</h3>
-                  <p class="staff-slider__work-position">д.м.н., врач – косметолог-дерматолог, руководитель Клиники
+                  <img src="img/staff-image-1.jpg" alt="Фото работника" width="187" height="169">
+                  <div class = "staff-info">
+                    <h3 class="staff-slider__staff-name titles">Жабоева Светлана Леоновна</h3>
+                    <p class="staff-slider__work-position">д.м.н., врач – косметолог-дерматолог, руководитель Клиники
                     антивозрастной медицины</p>
-                </div>
-                <div class="staff-slider__work-info">
-                  <p class="staff-slider__work-experience">
+                    <p class="staff-slider__work-experience">
                     <b>Опыт работы:</b> в косметологии с 1993 года, постоянно совершенствует свои знания, овладевает
                     новыми
                     методиками.
                   </p>
+                  </div>
+                  
+                </div>
+                <div class="staff-slider__work-info">
+                  
                   <p class="staff-slider__education">
                     <b>Образование:</b> медицинский факультет Кабардино-Балкарского государственного университета по
                     специальности «лечебное дело», курсы повышения квалификации в России и за рубежом (Монако, Франция,
@@ -542,23 +527,28 @@
                     общества специалистов ботулинотерапии, общества специалистов эстетической медицины, Американского
                     общества лазерной медицины и хирургии (ASMLS).
                   </p>
+                  <a class="appointment__submit-button buttonres button button-appointment but_slide" href="#">записаться на прием</a>
                 </div>
               </div>
             </div>
             <div class="staff-slider__slide shide">
               <div class="staff-slider__slide-wrapper">
                 <div class="staff-slider__info">
-                  <img src="img/staff-image-2.jpg" alt="Фото работника" width="360" height="326">
-                  <h3 class="staff-slider__staff-name titles">Базаева Светлана Витальевна</h3>
-                  <p class="staff-slider__work-position">врач – косметолог</p>
-                </div>
-                <div class="staff-slider__work-info">
-                  <p class="staff-slider__work-experience">
+                  <img src="img/staff-image-2.jpg" alt="Фото работника" width="187" height="169">
+                  <div class = "staff-info">
+                    <h3 class="staff-slider__staff-name titles">Базаева Светлана Витальевна</h3>
+                    <p class="staff-slider__work-position">врач – косметолог</p>
+                    <p class="staff-slider__work-experience">
                     <b>Опыт работы:</b> более 10 лет работает <br>
                     является автором собственных программ и методик по терапевтической косметологии. Большой опыт в
                     составлении индивидуальных программ anti-age направления, в том числе программ по коррекции
                     внешности.
                   </p>
+                  </div>
+                  
+                </div>
+                <div class="staff-slider__work-info">
+                  
                   <p class="staff-slider__education">
                     <b>Образование:</b> Выпускница Сибирского Государственного Медицинского Университета, курсы
                     повышения
@@ -580,23 +570,28 @@
                     Доктор Базаева владеет ботулинотерапией, которую применяет как в рамках anti-age программ, так и для
                     лечения гипергидроза.
                   </p>
+                  <a class="appointment__submit-button buttonres button button-appointment but_slide" href="#">записаться на прием</a>
                 </div>
               </div>
             </div>
             <div class="staff-slider__slide shide">
               <div class="staff-slider__slide-wrapper">
                 <div class="staff-slider__info">
-                  <img src="img/staff-image-3.jpg" alt="Фото работника" width="360" height="326">
-                  <h3 class="staff-slider__staff-name titles">Шабунина Элина Алексеевна</h3>
-                  <p class="staff-slider__work-position">врач — косметолог-дерматолог</p>
-                </div>
-                <div class="staff-slider__work-info">
-                  <p class="staff-slider__work-experience">
+                  <img src="img/staff-image-3.jpg" alt="Фото работника" width="187" height="169">
+                  <div class = "staff-info">
+                    <h3 class="staff-slider__staff-name titles">Шабунина Элина Алексеевна</h3>
+                    <p class="staff-slider__work-position">врач — косметолог-дерматолог</p>
+                    <p class="staff-slider__work-experience">
                     <b>Опыт:</b> Доктор Шабунина – молодой специалист, которая хорошо знакома со всеми современными
                     методиками
                     антивозрастной медицины. Ее обширные знания, а также опыт, который она уже успела получить,
                     открывают перед Элиной Алексеевной прекрасные перспективы.
                   </p>
+                  </div>
+                  
+                </div>
+                <div class="staff-slider__work-info">
+                  
                   <p class="staff-slider__education">
                     <b>Образование:</b> выпускница Первого Московского Государственного медицинского университета имени
                     И.М.
@@ -608,6 +603,7 @@
                     Доктор Шабунина владеет всеми методиками эстетической медицины, в том числе успешно работает на
                     аппарате М22.
                   </p>
+                  <a class="appointment__submit-button buttonres button button-appointment but_slide" href="#">записаться на прием</a>
                 </div>
               </div>
             </div>
@@ -629,39 +625,14 @@
           </div>
         </div>
         <div class="news__content-block">
-          <img src="img/news-image-1.jpg" alt="" class="news__image" width="360" height="359">
-          <img src="img/news-image-2.jpg" alt="" class="news__image" width="360" height="359">
-          <img src="img/news-image-3.jpg" alt="" class="news__image" width="360" height="359">
+          <img src="img/news-image-2.jpg" alt="" class="news__image" width="219" height="219">
+          <img src="img/news-image-3.jpg" alt="" class="news__image" width="219" height="219">
         </div>
       </div>
     </section>
     <section class="contacts">
       <div class="container">
-        <div class="contacts__wrapper">
-          <div class="contacts__main-content">
-            <h2 class="contacts__title titles">Контакты</h2>
-            <p class="contacts__address">Москва, Переведеновский пер., 8</p>
-            <a class="contacts__link" href="tel:+74952681212">8 495 268 12 12</a>
-            <a class="contacts__link" href="mailto:info@clinicamalyshevoy.ru">info@clinicamalyshevoy.ru</a>
-            <ul class="contacts__socials social ulres">
-              <li class="social__item">
-                <a class="social__link social__link--instagram" href="https://www.instagram.com/clinicamalyshevoy.antiage" aria-label="Мы в
-                    Инстаграме"></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://www.facebook.com/clinicamalyshevoy" aria-label="Мы в Фейсбуке"></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="https://vk.com/clinicamalyshevoy" aria-label="Мы в вконтакте"></a>
-              </li>
-            </ul>
-          </div>
-          <div class="contacts__time">
-            <h2 class="contacts__time-title titles">Часы работы</h2>
-            <p class="contacts__time-text">ежедневно с 8:00 до 20:00</p>
-            <p class="contacts__license">Лицензия департамента здравоохранения
-              города Москвы ЛО-77-01-018068 от 20 мая 2019 года</p>
-          </div>
+        <div class="contacts__wrapper">         
           <div class="contacts__form-wrapper">
             <form class="contacts__form callback-form" action="" method="POST">
               <div class="callback-form__main-content">
@@ -686,6 +657,30 @@
               </div>
             </form>
           </div>
+          <div class="contacts__main-content">
+              <h2 class="contacts__title titles">Контакты</h2>
+              <p class="contacts__address">Москва, Переведеновский пер., 8</p>
+              <a class="contacts__link" href="tel:+74952681212">8 495 268 12 12</a>
+              <a class="contacts__link" href="mailto:info@clinicamalyshevoy.ru">info@clinicamalyshevoy.ru</a>
+              <ul class="contacts__socials social ulres">
+                <li class="social__item">
+                  <a class="social__link social__link--instagram" href="https://www.instagram.com/clinicamalyshevoy.antiage" aria-label="Мы в
+                      Инстаграме"></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--facebook" href="https://www.facebook.com/clinicamalyshevoy" aria-label="Мы в Фейсбуке"></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--vkontakte" href="https://vk.com/clinicamalyshevoy" aria-label="Мы в вконтакте"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="contacts__time">
+              <h2 class="contacts__time-title titles">Часы работы</h2>
+              <p class="contacts__time-text">ежедневно с 8:00 до 20:00</p>
+              <p class="contacts__license">Лицензия департамента здравоохранения
+                города Москвы ЛО-77-01-018068 от 20 мая 2019 года</p>
+            </div>
         </div>
       </div>
     </section>
@@ -702,12 +697,15 @@
           © Клиника Елены Малышевой 2019 <br>
           Все права защищены
         </p>
+        <a href="" class="page-footer__developer"><b>Политика конфиденциальности</b></a>
+        <br><br>
         <p class="page-footer__developer">Разработка сайта <a class="page-footer__developer-link"
             href="#">plan-b.agency</a></p>
+        
       </div>
       <div class="page-footer__links">
         <a href="#" class="page-footer__nav-link">Наверх ↑</a>
-        <a href="" class="page-footer__conf-link">Политика конфиденциальности</a>
+        
       </div>
     </div>
   </footer>
